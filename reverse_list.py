@@ -21,7 +21,7 @@ class Solution:
         head = pre
         return head
 
-    def reverseBetewwn(self, head, m, n):
+    def reverseBeteewn(self, head, m, n):
         if not head or m == n: return head
         p = dummy = ListNode(None)
         dummy.next = head

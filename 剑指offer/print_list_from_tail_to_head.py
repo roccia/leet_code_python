@@ -10,7 +10,7 @@ class Solution:
         stack = []
         while node:
             stack.append(node.val)
-            node.next
+            node = node.next
         while stack:
             print(stack.pop())
 

@@ -12,10 +12,10 @@ def majority_element(nums):
             h[n] = 1
         else:
             h[n] += 1
-
+    print(h)
     for key, value in h.items():
         if value > len(nums) // 2:
             return key
 
 
-print(majority_element([6, 5, 5]))
+print(majority_element([6, 5, 5,4,4,4,4]))

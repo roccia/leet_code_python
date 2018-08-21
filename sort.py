@@ -52,3 +52,17 @@ def quicksort(ary):
 
     _quicksort(ary, 0, len(ary) - 1)
     return ary
+
+
+def bubble_sort(ary):
+     length = len(ary) - 1
+     sorted = False
+     while not sorted:
+         sorted = True
+         for i in range(0,length):
+             if ary[i] > ary[i+1]:
+                  sorted = False
+                  ary[i],ary[i+1]  = ary[i+1], ary[i]
+
+     return ary
+print(bubble_sort([3,2,1]))
