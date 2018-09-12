@@ -3,10 +3,10 @@ class TwoSum:
         hash = {}
 
         for i in range(len(nums)):
-            if nums[i] not in hash:
-                hash[target-nums[i]] = i+1
+            if nums[i] in hash:
+               return [hash[nums[i]],i]
             else:
-                return hash[nums[i]], i+1
+               hash[target - nums[i]] = i 
         return -1,-1
 
 class ThreeSum:
